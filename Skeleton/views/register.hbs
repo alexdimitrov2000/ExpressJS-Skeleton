@@ -1,0 +1,19 @@
+<h1>Register page</h1>
+<a href="/">Home page</a>
+<div class="form">
+  <form action='/user/register' method="POST">
+  {{#if message}}
+    <h3>{{ message }}</h3>
+  {{/if}}
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" value="{{username}}">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+
+    <label for="repeatPassword">Re-Password</label>
+    <input type="password" id="repeatPassword" name="repeatPassword">
+
+    <input type="submit" value="Register">
+  </form>
+</div>

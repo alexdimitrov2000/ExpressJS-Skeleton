@@ -1,0 +1,8 @@
+<h1>Index page.</h1>
+{{#if isLoggedIn}}
+<h2>Hello {{username}}</h2>
+<a href="/user/logout">Logout</a>
+{{else}}
+<a href="/user/login">Login</a>
+<a href="/user/register">Register</a>
+{{/if}}
